@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornatação de textos</title>
+    <style>
+        address 
+        {
+            background: yellow;           /*fazendo elemento ficar em linha*/
+            display: inline;                /*deixa na mesma linha*/
+            font-style: normal;             /*tira o itálico*/
+            text-decoration: underline;     /*coloca o sublinhado*/
+        }
+        strong {
+            color: red;
+        }
+        mark {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de texto</h1>
+    <!--Tag <u> = underline-->
+    <!--Tag <address> =  endereço-->
+    <p>
+        Orkutilson morava na <address>Rua do Sobe e Desce, 333</address>,
+    e seu e-mail era <address>orkutilson@gmail.com</address>
+   </p>
+   <p>
+       Ele estudava em uma <b>escola estadual</b> e sua matéria preferida era 
+       <i>matemática</i>.   
+       <!--
+       <i> = itálico (visual apenas) 
+       <b> = negrito (bold) (visual apenas)
+       -->                       
+   </p>
+   
+   <p>
+       Ele estudava em uma <strong>escola estadual</strong> e sua matéria preferida era 
+       <em>matemática</em>.
+       <!--
+           <strong> = texto mais importante(Semântica)
+           <em>=  ênfase (emphasis) (Semântica)    
+       -->
+   </p>
+
+   <p>
+       Ele também gosta de usar <mark>caneta marca texto</mark> para destacar
+       os trechos mais importantes do seu caderno.
+   </p>
+
+   <p>
+       Sua professora achava que ele era <strike>meio burro</strike> não muito
+       inteligente, já que sempre tinha dificuldade nas provas.
+       <!--
+           <strike = traço através do texto (tachado), (obsoleto).
+       -->
+   </p>
+
+   <p>
+       Sua professora achava que ele era <del>meio burro</del> não muito
+       inteligente, já que sempre tinha dificuldade nas provas.
+       <!--
+           <del> = texto apagado (Semântico)
+       -->
+   </p>
+
+   <p>
+       Depois que fez a recuperação sua nota foi de 6,7<ins> o suficiente para sua
+       aprovação</ins>.
+       <!--
+           <ins> = texto inserido (Semântico)
+       -->
+   </p>
+
+   <p>
+       Orkutilson também gostava de fórmulas. Suas preferidas eram H<sub>2</sub>O 
+       e E = mc<sup>2</sup>.
+   </p>
+
+</body>
+</html>

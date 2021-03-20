@@ -1,0 +1,18 @@
+/* Links em geral */
+a
+{
+    color: orangered;
+    text-decoration: none; /*tira o sublinhado do link*/
+}
+a:visited
+{
+    /*color: blue;*/
+
+    filter: brightness(15%);
+}
+a:hover
+{
+    /*color:lightcoral;*/
+    filter: brightness(120%);
+    text-decoration: underline; /*Volta o sublinhado*/
+}

@@ -1,15 +1,35 @@
 /* CSS reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 *{
 padding: 0;
 margin: 0;
+/* Exemplo de fonte sem serifa
+font-family: 'Calibri', 'Arial', sans; */
+
+/* Exemplo de família de fonte COM serifa
+font-family: Georgia, 'Times New Roman', serif; */
+
+/*Exemplo de família de fonte MONOESPAÇADA 
+font-family: Consolas, 'Courier new', monospace;*/
+
+font-family: raleway, Calibri, Arial, sans;
 }
 
-header {
+header 
+{
     background-color: #550000;
     padding: 10px 20px;
 }
-nav ul li{
+nav ul li
+{
     display: inline-block;
     margin: 10px;
+}
+nav
+{
+    background-color: #FF7F2A; /* Cor do fundo */
+    color: #FFFFFF;            /* Cor do texto */
 }

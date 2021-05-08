@@ -2,6 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* Definição de variáveis */
+
+:root
+{
+    --cor-primaria: #550000;
+    --cor-secundaria: #FF7F2A;
+    --cor-fundo-clara: #dddddd;
+    --cor-fundo-escura: #BBBBBB;
+    --cor-texto-claro: #ffffff;
+    --cor-texto-escura: #777777;
+}
+
 
 *{
 padding: 0;
@@ -17,10 +29,27 @@ font-family: Consolas, 'Courier new', monospace;*/
 
 font-family: raleway, Calibri, Arial, sans;
 }
+html 
+{
+    font-size: 16px;
+}
+
+a  /* Configuração de todos os links do site */
+{
+    color:var(--cor-primaria);
+    text-decoration: none;  /*Sem sublinhado*/
+}
+
+a:hover 
+{
+    /*Mouse passando em cima do link */
+    color: var(--cor-secundaria);
+    text-decoration: underline; /*Volta o sublinhado*/
+}
 
 header 
 {
-    background-color: #550000;
+    background-color: var(--cor-primaria);
     padding: 10px 20px;
 }
 nav ul li
@@ -30,6 +59,69 @@ nav ul li
 }
 nav
 {
-    background-color: #FF7F2A; /* Cor do fundo */
-    color: #FFFFFF;            /* Cor do texto */
+    background-color: var(--cor-secundaria); /* Cor do fundo */
+    color: var(--cor-texto-claro);            /* Cor do texto */
+}
+#content
+{
+    background-color: var(--cor-fundo-clara);
+    padding: 16px;
+    /* Este elemento e seus filhos usarão flexbox*/
+    display: flex;
+    flex-direction: row; /* Os filhos ficarão em linha */
+}
+
+section 
+{
+    background-color: var(--cor-texto-claro);
+    padding: 10px;
+    margin-bottom: 20px;
+    /* Bordas arredondadas*/
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    flex-grow: 1; /* 1 unidade de largura (padrão) */
+}
+
+#principal
+{
+    flex-grow: 3; /* 3 unidade de largura*/
+}
+
+#secundario
+{
+    margin-left: 20px;
+    background-color: var(--cor-fundo-escura);
+
+}
+
+section article
+{
+    /*article que estão dentro de uma section*/
+
+    margin: 24px 0; /* 12px top/bottom, 0 left/right */ 
+
+}
+
+section > h1 /* Apenas o h1 que são filhos diretos da section */
+{
+    /* Deixar o texto em maiúsculas */
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+}
+
+article > h1 
+{
+    /* Só os h1 que são filhos diretos de article */
+    font-size :1.5rem;  /* 1.5x o tamanho da fonte do elemento raiz (html) */
+    margin-bottom: 8px;
+}
+
+article > h1 > a 
+{
+    font-size: 1.5rem;
+}
+
+article > p 
+{
+    color: var(--cor-texto-escura);
 }

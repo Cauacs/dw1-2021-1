@@ -48,6 +48,38 @@ a:hover {   /* Mouse passando em cima do link */
 header {
     background-color: var(--cor-primaria);
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social
+{
+    background-color: transparent; /*Tira a cor de fundo*/
+    display: flex;
+    align-items: center;
+}
+
+#social img
+{
+    width: 48px;
+}
+
+#social a
+{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+#social a span 
+{
+    margin-left: 6px;
+    display: none;
+}
+
+#social a:hover span
+{
+    display: inline;
 }
 
 nav ul li {
@@ -58,6 +90,26 @@ nav ul li {
 nav {
     background-color: var(--cor-secundaria);  /* Cor do fundo */
     color: var(--cor-texto-claro);             /* Cor do texto */
+}
+
+#menu
+{
+    padding: 0 20px;
+}
+
+#menu a
+{
+    height: 100%;
+    padding: 10px;
+    color: #ffffff;
+    transition: 200ms;
+    background-color: var(--cor-secundaria);
+}
+
+#menu a:hover
+{
+    filter: brightness(0.8); /*Diminui o brilho em 20%, deixando mais escuro*/
+    text-decoration: none;
 }
 
 #content {
@@ -170,7 +222,7 @@ footer
     display: flex;
     color: #FFFFFF;
     flex-direction: row;
-    align-content: space-around; /*Dá espaço automaticamente entre os itens de um flexbox */
+    justify-content: space-around;
 }
 
 footer a 
@@ -182,5 +234,17 @@ footer ul li
 {
     display: inline-block; /*Coloca os itens em uma lista horizontal*/
     padding: 0 12px;
-    border-right: 1px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+}
+
+/*Tirar a borda direita do último li*/
+footer ul li:last-child
+{
+    border-right: none;
+}
+
+footer img
+{
+    width: 200px;
+    height: 100%;
 }
